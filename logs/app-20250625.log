@@ -1,0 +1,4 @@
+{"L":"INFO","timestamp":"2025-06-25T19:50:27.429+0700","C":"repository/user.go:52","M":"Repository User","query":"\n\t\tSELECT id, created_at, updated_at, deleted_at, name, email, password, role\n\t\tFROM users\n\t\tWHERE email = $1 AND deleted_at IS NULL\n\t"}
+{"L":"ERROR","timestamp":"2025-06-25T19:50:27.430+0700","C":"service/auth.go:31","M":"Service auth","error":"dial tcp 192.168.1.35:5432: connect: no route to host"}
+{"L":"INFO","timestamp":"2025-06-25T19:51:16.330+0700","C":"repository/user.go:52","M":"Repository User","query":"\n\t\tSELECT id, created_at, updated_at, deleted_at, name, email, password, role\n\t\tFROM users\n\t\tWHERE email = $1 AND deleted_at IS NULL\n\t"}
+{"L":"INFO","timestamp":"2025-06-25T21:49:05.393+0700","C":"repository/user.go:52","M":"Repository User","query":"\n\t\tSELECT id, created_at, updated_at, deleted_at, name, email, password, role\n\t\tFROM users\n\t\tWHERE email = $1 AND deleted_at IS NULL\n\t"}
