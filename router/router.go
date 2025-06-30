@@ -20,7 +20,7 @@ func NewRouter(handler handler.Handler) *chi.Mux {
 
 	r.Route("/lecturer", func(r chi.Router) {
 		r.Use(middleware.Auth)
-		r.Post("/grade", handler.SubmissionHandler.GradeSubmission)
+		r.With(middleware.AuthAdmin).Post("/grade", handler.SubmissionHandler.GradeSubmission)
 	})
 
 	// r.Get("/student/submit", assignmentHandler.ShowSubmitForm)
